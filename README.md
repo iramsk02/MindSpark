@@ -18,8 +18,8 @@ MindSpark is a modern microlearning platform enabling students to learn through 
 
 **Frontend:** React.js, Vite, Tailwind CSS 
 **Backend:** Node.js, Express.js, MongoDB, JWT, WebSockets  
-**Deployment:** Vercel (Frontend), Render (Backend), MongoDB Atlas  
-**AI & Tools:** Whisper, Google Translate API, FFmpeg  
+**Deployment:** Render (Frontend), Render (Backend), MongoDB Atlas  
+**AI & Tools:** Whisper, Google Translate API, FFmpeg ,Cohere AI 
 **Testing:** Vitest, React Testing Library, Playwright
 
 ## 🧑‍💻 Setup Instructions
