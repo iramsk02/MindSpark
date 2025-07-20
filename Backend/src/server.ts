@@ -5,7 +5,10 @@ import { WebSocketServer } from "ws";
 import connectDB from "./config/db";
 import { verifySocketToken } from "./middlewares/authMiddleware";
 import { Request, Response } from "express";
-import { createServer } from "http";
+import { createServer } from "HTTP";
+import { Request, Response } from "express";
+
+
 
 
 // Import Routes
@@ -34,6 +37,9 @@ app.use(express.urlencoded({ limit: '50mb', extended: true }));
 app.use(cors());
 
 // API Routes
+app.get("/",(req: Request, res: Response)=>{
+  res.status(200).send({ message: "Server is healthy" });
+})
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/courses", courseRoutes);
