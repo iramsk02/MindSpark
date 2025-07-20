@@ -1,6 +1,6 @@
 
 import {Users,} from "lucide-react"; 
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import {
   Menu,
   X,
@@ -16,6 +16,18 @@ import Logo from "../icons/Logo";
 
 export default function LandingPage() {
   const [isOpen, setIsOpen] = useState(false);
+  useEffect(()=>{
+     async function get() {
+    
+      const res = await fetch(`https://mindspark-backend.onrender.com`, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });}
+    get();
+    
+  },[])
 
   return (
     <>
